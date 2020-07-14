@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Dashboard</title>
 
-  <!-- Prevent the demo from appearing in search engines -->
   <meta name="robots" content="noindex">
+
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap" rel="stylesheet">
 
   <!-- Perfect Scrollbar -->
@@ -21,15 +21,24 @@
   <!-- Material Design Icons -->
   <link type="text/css" href="assets\css\material-icons.css" rel="stylesheet">
 
+
   <!-- Font Awesome Icons -->
   <link type="text/css" href="assets\css\fontawesome.css" rel="stylesheet">
+
 
   <!-- Preloader -->
   <link type="text/css" href="assets\css\preloader.css" rel="stylesheet">
 
+
   <!-- App CSS -->
   <link type="text/css" href="assets\css\app.css" rel="stylesheet">
 
+
+
+  <!-- Flatpickr -->
+  <link type="text/css" href="assets\css\flatpickr.css" rel="stylesheet">
+
+  <link type="text/css" href="assets\css\flatpickr-airbnb.css" rel="stylesheet">
 
 </head>
 
@@ -491,197 +500,45 @@
             </div>
           </div>
 
-          
+
         </div>
 
-        <div class="row mb-8pt">
-          <div class="col-lg-6">
-
-            <div class="page-separator">
-              <div class="page-separator__text">Transactions</div>
+        <div class="page-separator">
+          <div class="page-separator__text">Pi charts</div>
+        </div>
+        <div class="card card-body mb-32pt">
+          <div class="row">
+            <div class="col-lg-4"style="text-align:center;padding: 0;">
+              <div style="display:inline-block;" id="piechart1"></div>
             </div>
-            <div class="card">
-              <div data-toggle="lists" data-lists-values='[
-      "js-lists-values-course",
-      "js-lists-values-document",
-      "js-lists-values-amount",
-      "js-lists-values-date"
-    ]' data-lists-sort-by="js-lists-values-date" data-lists-sort-desc="true" class="table-responsive">
-                <table class="table table-flush table-nowrap">
-                  <thead>
-                    <tr>
-                      <th colspan="2">
-                        <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-course">Course</a>
-                        <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-document">Document</a>
-                        <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-amount">Amount</a>
-                        <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-date">Date</a>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody class="list">
-
-
-
-
-                    <tr>
-                      <td>
-                        <div class="d-flex flex-nowrap align-items-center">
-                          <a href="instructor-edit-course.html" class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
-                            <img src="assets\images\paths\angular_routing_200x168.png" alt="course" class="avatar-img rounded">
-                            <span class="overlay__content"></span>
-                          </a>
-                          <div class="flex">
-                            <a class="card-title js-lists-values-course" href="instructor-edit-course.html">Angular Routing In-Depth</a>
-                            <small class="text-muted mr-1">
-                              Invoice
-                              <a href="invoice.html" style="color: inherit;" class="js-lists-values-document">#8734</a> -
-                              &dollar;<span class="js-lists-values-amount">89</span> USD
-                            </small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="text-right">
-                        <small class="text-muted text-uppercase js-lists-values-date">12 Nov 2018</small>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="d-flex flex-nowrap align-items-center">
-                          <a href="instructor-edit-course.html" class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
-                            <img src="assets\images\paths\angular_testing_200x168.png" alt="course" class="avatar-img rounded">
-                            <span class="overlay__content"></span>
-                          </a>
-                          <div class="flex">
-                            <a class="card-title js-lists-values-course" href="instructor-edit-course.html">Angular Unit Testing</a>
-                            <small class="text-muted mr-1">
-                              Invoice
-                              <a href="invoice.html" style="color: inherit;" class="js-lists-values-document">#8735</a> -
-                              &dollar;<span class="js-lists-values-amount">89</span> USD
-                            </small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="text-right">
-                        <small class="text-muted text-uppercase js-lists-values-date">13 Nov 2018</small>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="d-flex flex-nowrap align-items-center">
-                          <a href="instructor-edit-course.html" class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
-                            <img src="assets\images\paths\typescript_200x168.png" alt="course" class="avatar-img rounded">
-                            <span class="overlay__content"></span>
-                          </a>
-                          <div class="flex">
-                            <a class="card-title js-lists-values-course" href="instructor-edit-course.html">Introduction to TypeScript</a>
-                            <small class="text-muted mr-1">
-                              Invoice
-                              <a href="invoice.html" style="color: inherit;" class="js-lists-values-document">#8736</a> -
-                              &dollar;<span class="js-lists-values-amount">89</span> USD
-                            </small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="text-right">
-                        <small class="text-muted text-uppercase js-lists-values-date">14 Nov 2018</small>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <div class="d-flex flex-nowrap align-items-center">
-                          <a href="instructor-edit-course.html" class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
-                            <img src="assets\images\paths\angular_200x168.png" alt="course" class="avatar-img rounded">
-                            <span class="overlay__content"></span>
-                          </a>
-                          <div class="flex">
-                            <a class="card-title js-lists-values-course" href="instructor-edit-course.html">Learn Angular Fundamentals</a>
-                            <small class="text-muted mr-1">
-                              Invoice
-                              <a href="invoice.html" style="color: inherit;" class="js-lists-values-document">#8737</a> -
-                              &dollar;<span class="js-lists-values-amount">89</span> USD
-                            </small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="text-right">
-                        <small class="text-muted text-uppercase js-lists-values-date">15 Nov 2018</small>
-                      </td>
-                    </tr>
-
-                  </tbody>
-                </table>
-              </div>
+            <div class="col-lg-4"style="text-align:center; padding: 0;">
+             <div style="display:inline-block;"id="piechart2"></div>
             </div>
-
+            <div class="col-lg-4"style="text-align:center; padding: 0;">
+              <div style="display:inline-block;"id="piechart3"></div>
+            </div>
           </div>
-          <div class="col-lg-6">
+        </div>
 
-            <div class="page-separator">
-              <div class="page-separator__text">Comments</div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <div class="media">
-                  <div class="media-left mr-12pt">
-                    <a href="#" class="avatar avatar-sm">
-                      <!-- <img src="assets/images/people/110/guy-9.jpg" alt="Guy" class="avatar-img rounded-circle"> -->
-                      <span class="avatar-title rounded-circle">LB</span>
-                    </a>
-                  </div>
-                  <div class="media-body d-flex flex-column">
-                    <div class="d-flex align-items-center">
-                      <a href="profile.html" class="card-title">Laza Bogdan</a>
-                      <small class="ml-auto text-muted">27 min ago</small><br>
+        <div class="page-separator">
+          <div class="page-separator__text">Student passed charts</div>
+        </div>
+        <div class="card mb-lg-32pt">
+            <div class="card-header d-flex align-items-center">
+                <strong class="card-title">Revenue</strong>
+                <div class="flatpickr-wrapper flatpickr-calendar-right d-flex ml-auto">
+                    <div id="recent_orders_date" data-toggle="flatpickr" data-flatpickr-wrap="true" data-flatpickr-static="true" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
+                        <a href="javascript:void(0)" class="link-date" data-toggle="">13/03/2018 to 20/03/2018</a>
+                        <input class="d-none" type="hidden" value="13/03/2018 to 20/03/2018" data-input="">
                     </div>
-                    <span class="text-muted">on <a href="instructor-edit-course.html" class="text-50" style="text-decoration: underline;">Data Visualization With Chart.js</a></span>
-                    <p class="mt-1 mb-0 text-70">How can I load Charts on a page?</p>
-                  </div>
                 </div>
-                <div class="media ml-sm-32pt mt-3 border rounded p-3 bg-light d-inline-flex measure-paragraph-max">
-                  <div class="media-left mr-12pt">
-                    <a href="#" class="avatar avatar-sm">
-                      <!-- <img src="assets/images/people/110/guy-6.jpg" alt="Guy" class="avatar-img rounded-circle"> -->
-                      <span class="avatar-title rounded-circle">FM</span>
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <div class="d-flex align-items-center">
-                      <a href="profile.html" class="card-title">FrontendMatter</a>
-                      <small class="ml-auto text-muted">just now</small>
-                    </div>
-                    <p class="mt-1 mb-0 text-70">Hi Bogdan,<br> Thank you for purchasing our course! <br><br>Please have a look at the charts library documentation <a href="#" class="text-underline">here</a> and follow the instructions.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer">
-                <form action="#" id="message-reply">
-                  <div class="input-group input-group-merge">
-                    <input type="text" class="form-control form-control-appended" required="" placeholder="Quick Reply">
-                    <div class="input-group-append">
-                      <div class="input-group-text pr-2">
-                        <button class="btn btn-flush" type="button"><i class="material-icons">tag_faces</i></button>
-                      </div>
-                      <div class="input-group-text pl-0">
-                        <div class="custom-file custom-file-naked d-flex" style="width: 24px; overflow: hidden;">
-                          <input type="file" class="custom-file-input" id="customFile">
-                          <label class="custom-file-label" style="color: inherit;" for="customFile">
-                            <i class="material-icons">attach_file</i>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="input-group-text pl-0">
-                        <button class="btn btn-flush" type="button"><i class="material-icons">send</i></button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
             </div>
-
-          </div>
+            <div class="card-body">
+                <div class="chart-legend mt-0 mb-24pt justify-content-start" id="ordersChartLegend"></div>
+                <div class="chart">
+                    <canvas id="ordersChart" class="chart-canvas js-update-chart-bar" data-chart-legend="#ordersChartLegend" data-chart-prefix="$" data-chart-suffix="k" data-chart-line-background-color="gradient:primary"></canvas>
+                </div>
+            </div>
         </div>
 
       </div>
@@ -727,7 +584,6 @@
 
           <div class="sidebar-heading">Instructor</div>
           <ul class="sidebar-menu">
-
 
               <li class="sidebar-menu-item">
                   <a class="sidebar-menu-button" href="instructor-dashboard.html">
@@ -791,12 +647,42 @@
         </div>
       </div>
     </div>
-    <!-- // END drawer -->
 
 
   </div>
   <!-- // END drawer-layout -->
 
+  <!-- Function for pie chart -->
+    <script  src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    // Load google charts
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Draw the chart and set the chart values
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['1 star', 2],
+      ['2 star', 2],
+      ['3 star', 4],
+      ['4 star', 10],
+      ['5 star', 6],
+
+    ]);
+
+      // Optional; add a title and set the width and height of the chart
+      var options = {'title':'My Average Day', 'width':300, 'height':300};
+
+      // Display the chart inside the <div> element with id="piechart"
+      var chart1 = new google.visualization.PieChart(document.getElementById('piechart1'));
+      chart1.draw(data, options);
+      var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
+      chart2.draw(data, options);
+      var chart3 = new google.visualization.PieChart(document.getElementById('piechart3'));
+      chart3.draw(data, options);
+    }
+    </script>
   <!-- jQuery -->
   <script src="assets\vendor\jquery.min.js"></script>
 
@@ -840,6 +726,13 @@
   <!-- List.js -->
   <script src="assets\vendor\list.min.js"></script>
   <script src="assets\js\list.js"></script>
+
+  <!-- Flatpickr -->
+  <script src="assets\vendor\flatpickr\flatpickr.min.js"></script>
+  <script src="assets\js\flatpickr.js"></script>
+
+  <!-- Chart.js Samples -->
+  <script src="assets\js\page.instructor-earnings.js"></script>
 
 </body>
 
