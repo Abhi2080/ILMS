@@ -59,14 +59,14 @@
                         fontSize: 12,
                         fontColor: "rgba(54, 76, 102, 0.54)",
                         position: "top",
-                        text: "EARNINGS"
+                        text: "ATTENDANCE"
                     }
                 }, r);
                 var n = {
-                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    labels: ["D.S","P.C","Q.P","IEEE","L.A","EVS","Phy."],
                     datasets: [{
                         label: "Sales",
-                        data: [25, 20, 30, 22, 17, 10, 18, 26, 28, 26, 20, 32],
+                        data: [88.6,92,88.6,74,78,83,91],
                         barPercentage: .5,
                         barThickness: 20
                     }]
