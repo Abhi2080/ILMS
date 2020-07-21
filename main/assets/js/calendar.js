@@ -53,6 +53,7 @@ function previous() {
 }
 
 function jump() {
+
   currentYear = parseInt(selectYear.value);
   currentMonth = parseInt(selectMonth.value);
   showCalendar(currentMonth, currentYear);
@@ -64,13 +65,15 @@ function showCalendar(month, year) {
 
   tbl = document.getElementById("calendar-body");
 
-  
+
   tbl.innerHTML = "";
 
-  
+
   monthAndYear.innerHTML = months[month] + " " + year;
   selectYear.value = year;
   selectMonth.value = month;
+
+  console.log(monthAndYear,selectYear,selectMonth);
 
   // creating all cells
   var date = 1;
@@ -115,7 +118,11 @@ function showCalendar(month, year) {
                 cell.className = "date-picker green ";
               }
               if ( date === 16 && year === 2020 && month === 5 ) {
-                cell.className = "date-picker yellow ";
+
+                cell.className = "date-picker yellow";
+                cell.setAttribute("data-toggle","popover");
+                cell.setAttribute("title","Reason for Leave :");
+                cell.setAttribute("data-content","Sick leave due to dengue fever ");
               }
               if ( date === 17 && year === 2020 && month === 5 ) {
                 cell.className = "date-picker green ";
@@ -129,6 +136,9 @@ function showCalendar(month, year) {
               }
               if ( date === 11 && year === 2020 && month === 5 ) {
                 cell.className = "date-picker yellow ";
+                cell.setAttribute("data-toggle","popover");
+                cell.setAttribute("title","Reason for Leave :");
+                cell.setAttribute("data-content","Personal leave for some reason");
               }
               if ( date === 10 && year === 2020 && month === 5 ) {
                 cell.className = "date-picker green ";
@@ -154,6 +164,9 @@ function showCalendar(month, year) {
               }
               if ( date ===3 && year === 2020 && month === 5 ) {
                 cell.className = "date-picker yellow ";
+                cell.setAttribute("data-toggle","popover");
+                cell.setAttribute("title","Reason for Leave :");
+                cell.setAttribute("data-content","Sick leave due to headache");
               }
               if ( date === 2 && year === 2020 && month === 5 ) {
                 cell.className = "date-picker green ";
@@ -161,7 +174,7 @@ function showCalendar(month, year) {
               if ( date === 1 && year === 2020 && month === 5 ) {
                 cell.className = "date-picker green ";
               }
-              
+
               if ( date === 27 && year === 2020 && month === 5 ) {
                 cell.className = "date-picker red ";
               }
@@ -169,7 +182,11 @@ function showCalendar(month, year) {
                 cell.className = "date-picker green ";
               }
               if ( date === 25 && year === 2020 && month === 5 ) {
-                cell.className = "date-picker yellow ";
+                cell.className = "date-picker yellow";
+                cell.setAttribute("data-toggle","popover");
+                cell.setAttribute("title","Reason for Leave :");
+                cell.setAttribute("data-content","Outside of the city");
+
               }
               if ( date === 24 && year === 2020 && month === 5 ) {
                 cell.className = "date-picker green ";
@@ -183,7 +200,7 @@ function showCalendar(month, year) {
               if ( date === 21 && year === 2020 && month === 5 ) {
                 cell.className = "date-picker red ";
               }
-              
+
               if ( date === 30 && year === 2020 && month === 5 ) {
                 cell.className = "date-picker green ";
               }
@@ -196,7 +213,7 @@ function showCalendar(month, year) {
 
               row.appendChild(cell);
               date++;
-              
+
           }
 
 
@@ -204,6 +221,17 @@ function showCalendar(month, year) {
 
       tbl.appendChild(row);
   }
+
+  $(".date-picker").mouseover(function() {
+
+    $(this).popover('show');
+    
+    });
+  $(".date-picker").mouseout(function() {
+
+      $(this).popover('hide');
+
+      });
 
 }
 
