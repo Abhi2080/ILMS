@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Quizzes</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap" rel="stylesheet">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="assets\vendor\perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- Fix Footer CSS -->
+    <link type="text/css" href="assets\vendor\fix-footer.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="assets\css\material-icons.css" rel="stylesheet">
+
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="assets\css\fontawesome.css" rel="stylesheet">
+
+
+    <!-- Preloader -->
+    <link type="text/css" href="assets\css\preloader.css" rel="stylesheet">
+
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets\css\app.css" rel="stylesheet">
+
+    <!-- Quill Theme -->
+    <link type="text/css" href="assets\css\quill.css" rel="stylesheet">
+
+    <!-- Select2 -->
+    <link type="text/css" href="assets\css\select2.css" rel="stylesheet">
+
+    <link type="text/css" href="assets\vendor\select2\select2.min.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body class="layout-app ">
+
+    <div class="preloader">
+        <div class="sk-double-bounce">
+            <div class="sk-child sk-double-bounce1"></div>
+            <div class="sk-child sk-double-bounce2"></div>
+        </div>
+    </div>
+
+    <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push="" data-responsive-width="992px">
+        <div class="mdk-drawer-layout__content page-content">
+
+            <!-- Header -->
+
+
+            <div class="navbar navbar-expand pr-0 navbar-light border-bottom-2" id="default-navbar" data-primary="">
+                <!-- Navbar toggler -->
+                <button class="navbar-toggler w-auto mr-16pt d-block d-lg-none rounded-0" type="button" data-toggle="sidebar">
+                    <span class="material-icons">short_text</span>
+                </button>
+
+
+
+                <div class="flex"></div>
+
+
+                <!-- Toggler -->
+                <a href="compact-instructor-quizzes.html" class="navbar-toggler navbar-toggler-custom align-items-center justify-content-center d-none d-lg-flex" data-toggle="tooltip" data-title="Switch to Compact Layout" data-placement="bottom" data-boundary="window">
+                    <span class="material-icons">swap_horiz</span>
+                </a>
+
+
+                <div class="nav navbar-nav flex-nowrap d-flex mr-16pt">
+
+
+                    <!-- Notifications dropdown -->
+                    <div class="nav-item dropdown dropdown-notifications dropdown-xs-down-full" data-toggle="tooltip" data-title="Messages" data-placement="bottom" data-boundary="window">
+                        <button class="nav-link btn-flush dropdown-toggle" type="button" data-toggle="dropdown" data-caret="false">
+                            <i class="material-icons icon-24pt">mail_outline</i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div data-perfect-scrollbar="" class="position-relative">
+                                <div class="dropdown-header"><strong>Messages</strong></div>
+                                <div class="list-group list-group-flush mb-0">
+
+                                    <a href="javascript:void(0);" class="list-group-item list-group-item-action unread">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">5 minutes ago</small>
+
+                                            <span class="ml-auto unread-indicator bg-accent"></span>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <img src="assets\images\people\110\woman-5.jpg" alt="people" class="avatar-img rounded-circle">
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+                                                <strong class="text-black-100">Michelle</strong>
+                                                <span class="text-black-70">Clients loved the new design.</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">5 minutes ago</small>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <img src="assets\images\people\110\woman-5.jpg" alt="people" class="avatar-img rounded-circle">
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+                                                <strong class="text-black-100">Michelle</strong>
+                                                <span class="text-black-70">ðŸ”¥ Superb job..</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // END Notifications dropdown -->
+
+
+                    <!-- Notifications dropdown -->
+                    <div class="nav-item ml-16pt dropdown dropdown-notifications dropdown-xs-down-full" data-toggle="tooltip" data-title="Notifications" data-placement="bottom" data-boundary="window">
+                        <button class="nav-link btn-flush dropdown-toggle" type="button" data-toggle="dropdown" data-caret="false">
+                            <i class="material-icons">notifications_none</i>
+                            <span class="badge badge-notifications badge-accent">2</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div data-perfect-scrollbar="" class="position-relative">
+                                <div class="dropdown-header"><strong>System notifications</strong></div>
+                                <div class="list-group list-group-flush mb-0">
+
+                                    <a href="javascript:void(0);" class="list-group-item list-group-item-action unread">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">3 minutes ago</small>
+
+                                            <span class="ml-auto unread-indicator bg-accent"></span>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <span class="avatar-title rounded-circle bg-light">
+                                                    <i class="material-icons font-size-16pt text-accent">account_circle</i>
+                                                </span>
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+
+                                                <span class="text-black-70">Your profile information has not been synced correctly.</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">5 hours ago</small>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <span class="avatar-title rounded-circle bg-light">
+                                                    <i class="material-icons font-size-16pt text-primary">group_add</i>
+                                                </span>
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+                                                <strong class="text-black-100">Adrian. D</strong>
+                                                <span class="text-black-70">Wants to join your private group.</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">1 day ago</small>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <span class="avatar-title rounded-circle bg-light">
+                                                    <i class="material-icons font-size-16pt text-warning">storage</i>
+                                                </span>
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+
+                                                <span class="text-black-70">Your deploy was successful.</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // END Notifications dropdown -->
+
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown" data-caret="false">
+
+                            <span class="avatar avatar-sm mr-8pt2">
+
+                                <span class="avatar-title rounded-circle bg-primary"><i class="material-icons">account_box</i></span>
+
+                            </span>
+
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-header"><strong>Account</strong></div>
+                            <a class="dropdown-item" href="edit-account.html">Edit Account</a>
+                            <a class="dropdown-item" href="billing.html">Billing</a>
+                            <a class="dropdown-item" href="billing-history.html">Payments</a>
+                            <a class="dropdown-item" href="login.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- // END Header -->
+
+
+
+            <div class="pt-32pt">
+                <div class="container page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
+                    <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
+
+                        <div class="mb-24pt mb-sm-0 mr-sm-24pt">
+                            <h2 class="mb-0">Participants</h2>
+
+                            <ol class="breadcrumb p-0 m-0">
+                                <li class="breadcrumb-item"><a href="instructor-dashboard.html">Home</a></li>
+
+                                <li class="breadcrumb-item ">
+                                 <a href="instructor-quizzes.html">
+                                    Quizzes
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active ">
+
+                                   Authentication and Security Levels
+
+                                </li>
+
+                            </ol>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="container page__container page-section">
+              <div class="page-separator">
+                  <div class="page-separator__text">All participants</div>
+              </div>
+              <div class="card dashboard-area-tabs p-relative o-hidden mb-lg-32pt">
+
+
+                            <div class="table-responsive" data-toggle="lists" data-lists-sort-by="js-lists-values-date" data-lists-sort-desc="true" data-lists-values="[&quot;js-lists-values-lead&quot;, &quot;js-lists-values-project&quot;, &quot;js-lists-values-status&quot;, &quot;js-lists-values-budget&quot;, &quot;js-lists-values-date&quot;]">
+
+
+
+
+                                <table class="table mb-0 thead-border-top-0 table-nowrap">
+                                    <thead>
+                                        <tr>
+
+                                            <th style="width: 18px;" class="pr-0">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-toggle-check-all" data-target="#projects" id="customCheckAll" data-domfactory-upgraded="toggle-check-all">
+                                                    <label class="custom-control-label" for="customCheckAll"><span class="text-hide">Toggle all</span></label>
+                                                </div>
+                                            </th>
+
+                                            <th>
+                                                <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-lead">Roll</a>
+                                            </th>
+                                            <th>
+                                                <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-lead">Name</a>
+                                            </th>
+                                            <th>
+                                                <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-lead">Branch</a>
+                                            </th>
+                                            <th>
+                                                <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-lead">Semester</a>
+                                            </th>
+
+                                            <th style="width: 48px;">
+                                                <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-status">Status</a>
+                                            </th>
+
+
+
+                                            <th style="width: 48px;">
+                                                <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-budget">Score</a>
+                                            </th>
+
+                                            <th style="width: 48px;">
+                                                <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-date">Date of Submission</a>
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody class="list" id="projects">
+                                      <tr class="">
+
+                                            <td class="pr-0">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_1" data-domfactory-upgraded="check-selected-row">
+                                                    <label class="custom-control-label" for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                      <a class="d-flex flex-column"href="quiz-student-result.html"style="color:black;">
+                                                                                        <small class="js-lists-values-lead"><strong>#00210</strong></small>
+
+                                                                                    </a>
+                                                                                </td>
+
+
+
+
+                                            <td>
+
+                                                <div class="media flex-nowrap align-items-center" style="white-space: nowrap;">
+                                                    <div class="avatar avatar-sm mr-8pt">
+
+
+                                                        <a class="avatar-title rounded-circle"href="quiz-student-result.html"style="color:white;">BN</a>
+
+                                                    </div>
+                                                    <div class="media-body">
+
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="flex d-flex flex-column">
+                                                                <a class="mb-0"href="quiz-student-result.html"style="color:black;"><strong class="js-lists-values-lead">Billy Nunez</strong></a>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                      <div class="d-flex flex-column">
+                                                                    <small class="js-lists-values-status text-50 mb-4pt">CSE</small>
+
+                                                                                    </div>
+                                                                                </td>
+                                                <td>
+                                                                          <div class="d-flex flex-column">
+                                                                              <small class="js-lists-values-status text-50 mb-4pt">4th</small>
+
+                                                                          </div>
+                                                                      </td>
+
+                                            <td>
+                                                <div class="d-flex flex-column">
+                                                    <small class="js-lists-values-status text-50 mb-4pt">Failed</small>
+                                                    <span class="indicator-line rounded bg-accent"></span>
+                                                </div>
+                                            </td>
+
+
+
+                                            <td>
+
+                                                 <span  class="btn btn-dark btn-rounded">77/500</span>
+
+                                           </td>
+
+                                            <td style="text-align:center;">
+                                                <div class="d-flex flex-column">
+                                                    <small class="js-lists-values-date"><strong>19/02/2019</strong></small>
+
+                                                </div>
+                                            </td>
+
+                                        </tr><tr class="">
+
+                                            <td class="pr-0">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_2" data-domfactory-upgraded="check-selected-row">
+                                                    <label class="custom-control-label" for="customCheck1_2"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                      <a class="d-flex flex-column"href="quiz-student-result.html"style="color:black;">
+                                                                                        <small class="js-lists-values-lead"><strong>#00254</strong></small>
+
+                                                                                    </a>
+                                                                                </td>
+
+
+
+
+                                            <td>
+
+                                                <div class="media flex-nowrap align-items-center" style="white-space: nowrap;">
+                                                    <div class="avatar avatar-sm mr-8pt">
+
+
+                                                        <a class="avatar-title rounded-circle"href="quiz-student-result.html"style="color:white;">TP</a>
+
+                                                    </div>
+                                                    <div class="media-body">
+
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="flex d-flex flex-column">
+                                                                <a class="mb-0"href="quiz-student-result.html"style="color:black;"><strong class="js-lists-values-lead">Tony Parks</strong></a>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                      <div class="d-flex flex-column">
+                                                                    <small class="js-lists-values-status text-50 mb-4pt">CSE</small>
+
+                                                                                    </div>
+                                                                                </td>
+                                                <td>
+                                                                          <div class="d-flex flex-column">
+                                                                              <small class="js-lists-values-status text-50 mb-4pt">4th</small>
+
+                                                                          </div>
+                                                                      </td>
+
+                                            <td>
+                                                <div class="d-flex flex-column">
+                                                    <small class="js-lists-values-status text-50 mb-4pt">Passed</small>
+                                                    <span class="indicator-line rounded bg-primary"></span>
+                                                </div>
+                                            </td>
+
+
+
+                                            <td>
+
+                                                 <span  class="btn btn-dark btn-rounded">440/500</span>
+
+                                           </td>
+
+                                            <td style="text-align:center;">
+                                                <div class="d-flex flex-column">
+                                                    <small class="js-lists-values-date"><strong>18/02/2019</strong></small>
+                                                    <small class="text-danger">Overdue</small>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr class="">
+
+                                            <td class="pr-0">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_3" data-domfactory-upgraded="check-selected-row">
+                                                    <label class="custom-control-label" for="customCheck1_3"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                      <a class="d-flex flex-column"href="quiz-student-result.html"style="color:black;">
+                                                                                        <small class="js-lists-values-lead"><strong>#00209</strong></small>
+
+                                                                                    </a>
+                                                                                </td>
+
+
+
+
+                                            <td>
+
+                                                <div class="media flex-nowrap align-items-center" style="white-space: nowrap;">
+                                                    <a class="avatar avatar-sm mr-8pt"href="quiz-student-result.html"style="color:black;">
+
+                                                        <img src="assets\images\people\110\guy-1.jpg" alt="Avatar" class="avatar-img rounded-circle">
+
+
+                                                    </a>
+                                                    <div class="media-body">
+
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="flex d-flex flex-column">
+                                                                <a class="mb-0"href="quiz-student-result.html"style="color:black;"><strong class="js-lists-values-lead">Gilbert Barrett</strong></a>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                      <div class="d-flex flex-column">
+                                                                    <small class="js-lists-values-status text-50 mb-4pt">EEE</small>
+
+                                                                                    </div>
+                                                                                </td>
+                                                <td>
+                                                                          <div class="d-flex flex-column">
+                                                                              <small class="js-lists-values-status text-50 mb-4pt">4th</small>
+
+                                                                          </div>
+                                                                      </td>
+
+                                            <td>
+                                                <div class="d-flex flex-column">
+                                                    <small class="js-lists-values-status text-50 mb-4pt">Passed</small>
+                                                            <span class="indicator-line rounded bg-primary"></span>
+                                                </div>
+                                            </td>
+
+
+
+                                            <td>
+
+                                                 <span  class="btn btn-dark btn-rounded">270/500</span>
+
+                                           </td>
+
+                                            <td style="text-align:center;">
+                                                <div class="d-flex flex-column">
+                                                    <small class="js-lists-values-date"><strong>17/02/2019</strong></small>
+
+                                                </div>
+                                            </td>
+
+                                        </tr><tr class="">
+
+                                            <td class="pr-0">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_4" data-domfactory-upgraded="check-selected-row">
+                                                    <label class="custom-control-label" for="customCheck1_4"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                      <div class="d-flex flex-column">
+                                                                                        <a href="quiz-student-result.html"style="color:black;" class="js-lists-values-lead"><strong>#00245</strong></a>
+
+                                                                                    </div>
+                                                                                </td>
+
+
+
+                                            <td>
+
+                                                <div class="media flex-nowrap align-items-center" style="white-space: nowrap;">
+                                                    <a href="quiz-student-result.html"style="color:black;" class="avatar avatar-sm mr-8pt">
+
+                                                        <img src="assets\images\people\110\guy-2.jpg" alt="Avatar" class="avatar-img rounded-circle">
+
+
+                                                    </a>
+                                                    <div class="media-body">
+
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="flex d-flex flex-column">
+                                                                <a href="quiz-student-result.html"style="color:black;" class="mb-0"><strong class="js-lists-values-lead">Ollie Wallace</strong></a>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                      <div class="d-flex flex-column">
+                                                                    <small class="js-lists-values-status text-50 mb-4pt">ECE</small>
+
+                                                                                    </div>
+                                                                                </td>
+                                                <td>
+                                                                          <div class="d-flex flex-column">
+                                                                              <small class="js-lists-values-status text-50 mb-4pt">4th</small>
+
+                                                                          </div>
+                                                                      </td>
+
+                                            <td>
+                                                <div class="d-flex flex-column">
+                                                    <small class="js-lists-values-status text-50 mb-4pt">Failed</small>
+                                                        <span class="indicator-line rounded bg-accent"></span>
+                                                </div>
+                                            </td>
+
+
+                                            <td>
+
+                                                 <span  class="btn btn-dark btn-rounded">80/500</span>
+
+                                           </td>
+
+                                            <td style="text-align:center;">
+                                                <div class="d-flex flex-column">
+                                                    <small class="js-lists-values-date"><strong>16/02/2019</strong></small>
+
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                              <td class="pr-0">
+                                                  <div class="custom-control custom-checkbox">
+                                                      <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_1" data-domfactory-upgraded="check-selected-row">
+                                                      <label class="custom-control-label" for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                  </div>
+                                              </td>
+
+                                              <td>
+                                                        <div class="d-flex flex-column">
+                                                                                          <a href="quiz-student-result.html"style="color:black;" class="js-lists-values-lead"><strong>#00226</strong></a>
+
+                                                                                      </div>
+                                                                                  </td>
+
+
+
+
+                                              <td>
+
+                                                  <div class="media flex-nowrap align-items-center" style="white-space: nowrap;">
+                                                      <div class="avatar avatar-sm mr-8pt">
+
+
+                                                          <a href="quiz-student-result.html"style="color:white;" class="avatar-title rounded-circle">KS</a>
+
+                                                      </div>
+                                                      <div class="media-body">
+
+
+                                                          <div class="d-flex align-items-center">
+                                                              <div class="flex d-flex flex-column">
+                                                                  <a href="quiz-student-result.html"style="color:black;" class="mb-0"><strong class="js-lists-values-lead">Kartik Saurya</strong></a>
+
+                                                              </div>
+                                                          </div>
+
+
+                                                      </div>
+                                                  </div>
+
+                                              </td>
+
+                                              <td>
+                                                        <div class="d-flex flex-column">
+                                                                      <small class="js-lists-values-status text-50 mb-4pt">CSE</small>
+
+                                                                                      </div>
+                                                                                  </td>
+                                                  <td>
+                                                                            <div class="d-flex flex-column">
+                                                                                <small class="js-lists-values-status text-50 mb-4pt">4th</small>
+
+                                                                            </div>
+                                                                        </td>
+                                              <td>
+                                                  <div class="d-flex flex-column">
+                                                      <small class="js-lists-values-status text-50 mb-4pt">Passed</small>
+                                                      <span class="indicator-line rounded bg-primary"></span>
+                                                  </div>
+                                              </td>
+
+
+
+                                              <td>
+
+                                                   <span  class="btn btn-dark btn-rounded">475/500</span>
+
+                                             </td>
+
+                                              <td style="text-align:center;">
+                                                  <div class="d-flex flex-column">
+                                                      <small class="js-lists-values-date"><strong>09/01/2019</strong></small>
+
+                                                  </div>
+                                              </td>
+
+                                          </tr>
+                                        <tr class="">
+
+                                            <td class="pr-0">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_5" data-domfactory-upgraded="check-selected-row">
+                                                    <label class="custom-control-label" for="customCheck1_5"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                      <div class="d-flex flex-column">
+                                                                                        <a href="quiz-student-result.html"style="color:black;" class="js-lists-values-lead"><strong>#00214</strong></a>
+
+                                                                                    </div>
+                                                                                </td>
+
+
+
+                                            <td>
+
+                                                <div class="media flex-nowrap align-items-center" style="white-space: nowrap;">
+                                                    <a href="quiz-student-result.html"style="color:black;"class="avatar avatar-sm mr-8pt">
+
+                                                        <img src="assets\images\people\110\guy-3.jpg" alt="Avatar" class="avatar-img rounded-circle">
+
+
+                                                    </a>
+                                                    <div class="media-body">
+
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="flex d-flex flex-column">
+                                                                <p class="mb-0"><strong class="js-lists-values-lead">Ricardo Bell</strong></p>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                      <div class="d-flex flex-column">
+                                                                    <small class="js-lists-values-status text-50 mb-4pt">ECE</small>
+
+                                                                                    </div>
+                                                                                </td>
+                                                <td>
+                                                                          <div class="d-flex flex-column">
+                                                                              <small class="js-lists-values-status text-50 mb-4pt">4th</small>
+
+                                                                          </div>
+                                                                      </td>
+
+                                            <td>
+                                                <div class="d-flex flex-column">
+                                                    <small class="js-lists-values-status text-50 mb-4pt">Passed</small>
+                                                    <span class="indicator-line rounded bg-primary"></span>
+                                                </div>
+                                            </td>
+
+
+
+                                            <td>
+
+                                                 <span  class="btn btn-dark btn-rounded">340/500</span>
+
+                                           </td>
+
+                                            <td style="text-align:center;">
+                                                <div class="d-flex flex-column">
+                                                    <small class="js-lists-values-date"><strong>01/12/2018</strong></small>
+
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                              <td class="pr-0">
+                                                  <div class="custom-control custom-checkbox">
+                                                      <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_1" data-domfactory-upgraded="check-selected-row">
+                                                      <label class="custom-control-label" for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                  </div>
+                                              </td>
+
+                                              <td>
+                                                        <div class="d-flex flex-column">
+                                                                                          <a href="quiz-student-result.html"style="color:black;"class="js-lists-values-lead"><strong>#00210</strong></a>
+
+                                                                                      </div>
+                                                                                  </td>
+
+
+
+
+                                              <td>
+
+                                                  <div class="media flex-nowrap align-items-center" style="white-space: nowrap;">
+                                                      <div class="avatar avatar-sm mr-8pt">
+
+
+                                                          <a href="quiz-student-result.html"style="color:white;" class="avatar-title rounded-circle">BN</a>
+
+                                                      </div>
+                                                      <div class="media-body">
+
+
+                                                          <div class="d-flex align-items-center">
+                                                              <div class="flex d-flex flex-column">
+                                                                  <a href="quiz-student-result.html"style="color:black;" class="mb-0"><strong class="js-lists-values-lead">Billy Nunez</strong></a>
+
+                                                              </div>
+                                                          </div>
+
+
+                                                      </div>
+                                                  </div>
+
+                                              </td>
+                                              <td>
+                                                        <div class="d-flex flex-column">
+                                                                      <small class="js-lists-values-status text-50 mb-4pt">CSE</small>
+
+                                                                                      </div>
+                                                                                  </td>
+                                                  <td>
+                                                                            <div class="d-flex flex-column">
+                                                                                <small class="js-lists-values-status text-50 mb-4pt">4th</small>
+
+                                                                            </div>
+                                                                        </td>
+
+                                              <td>
+                                                  <div class="d-flex flex-column">
+                                                      <small class="js-lists-values-status text-50 mb-4pt">Failed</small>
+                                                      <span class="indicator-line rounded bg-accent"></span>
+                                                  </div>
+                                              </td>
+
+
+
+                                              <td>
+
+                                                   <span  class="btn btn-dark btn-rounded">77/500</span>
+
+                                             </td>
+
+                                              <td style="text-align:center;">
+                                                  <div class="d-flex flex-column">
+                                                      <small class="js-lists-values-date"><strong>19/02/2019</strong></small>
+
+                                                  </div>
+                                              </td>
+
+                                          </tr><tr class="">
+
+                                              <td class="pr-0">
+                                                  <div class="custom-control custom-checkbox">
+                                                      <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_2" data-domfactory-upgraded="check-selected-row">
+                                                      <label class="custom-control-label" for="customCheck1_2"><span class="text-hide">Check</span></label>
+                                                  </div>
+                                              </td>
+
+                                              <td>
+                                                        <div class="d-flex flex-column">
+                                                                                          <a href="quiz-student-result.html"style="color:black;"class="js-lists-values-lead"><strong>#00254</strong></a>
+
+                                                                                      </div>
+                                                                                  </td>
+
+
+
+
+                                              <td>
+
+                                                  <div class="media flex-nowrap align-items-center" style="white-space: nowrap;">
+                                                      <div class="avatar avatar-sm mr-8pt">
+
+
+                                                          <a  href="quiz-student-result.html"style="color:white;"class="avatar-title rounded-circle">TP</a >
+
+                                                      </div>
+                                                      <div class="media-body">
+
+
+                                                          <div class="d-flex align-items-center">
+                                                              <div class="flex d-flex flex-column">
+                                                                  <a href="quiz-student-result.html"style="color:black;" class="mb-0"><strong class="js-lists-values-lead">Tony Parks</strong></a >
+
+                                                              </div>
+                                                          </div>
+
+
+                                                      </div>
+                                                  </div>
+
+                                              </td>
+                                              <td>
+                                                        <div class="d-flex flex-column">
+                                                                      <small class="js-lists-values-status text-50 mb-4pt">CSE</small>
+
+                                                                                      </div>
+                                                                                  </td>
+                                                  <td>
+                                                                            <div class="d-flex flex-column">
+                                                                                <small class="js-lists-values-status text-50 mb-4pt">4th</small>
+
+                                                                            </div>
+                                                                        </td>
+
+                                              <td>
+                                                  <div class="d-flex flex-column">
+                                                      <small class="js-lists-values-status text-50 mb-4pt">Passed</small>
+                                                      <span class="indicator-line rounded bg-primary"></span>
+                                                  </div>
+                                              </td>
+
+
+
+                                              <td>
+
+                                                   <span  class="btn btn-dark btn-rounded">440/500</span>
+
+                                             </td>
+
+                                              <td style="text-align:center;">
+                                                  <div class="d-flex flex-column">
+                                                      <small class="js-lists-values-date"><strong>18/02/2019</strong></small>
+                                                      <small class="text-danger">Overdue</small>
+                                                  </div>
+                                              </td>
+
+                                          </tr>
+
+                                          <tr class="">
+
+                                              <td class="pr-0">
+                                                  <div class="custom-control custom-checkbox">
+                                                      <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_3" data-domfactory-upgraded="check-selected-row">
+                                                      <label class="custom-control-label" for="customCheck1_3"><span class="text-hide">Check</span></label>
+                                                  </div>
+                                              </td>
+
+                                              <td>
+                                                        <div class="d-flex flex-column">
+                                                                                          <a  href="quiz-student-result.html"style="color:black;"class="js-lists-values-lead"><strong>#00209</strong></a >
+
+                                                                                      </div>
+                                                                                  </td>
+
+
+
+
+                                              <td>
+
+                                                  <div class="media flex-nowrap align-items-center" style="white-space: nowrap;">
+                                                      <a href="quiz-student-result.html"style="color:black;" class="avatar avatar-sm mr-8pt">
+
+                                                          <img src="assets\images\people\110\guy-1.jpg" alt="Avatar" class="avatar-img rounded-circle">
+
+
+                                                      </a >
+                                                      <div class="media-body">
+
+
+                                                          <div class="d-flex align-items-center">
+                                                              <div class="flex d-flex flex-column">
+                                                                  <a href="quiz-student-result.html"style="color:black;" class="mb-0"><strong class="js-lists-values-lead">Gilbert Barrett</strong></a >
+
+                                                              </div>
+                                                          </div>
+
+
+                                                      </div>
+                                                  </div>
+
+                                              </td>
+                                              <td>
+                                                        <div class="d-flex flex-column">
+                                                                      <small class="js-lists-values-status text-50 mb-4pt">EEE</small>
+
+                                                                                      </div>
+                                                                                  </td>
+                                                  <td>
+                                                                            <div class="d-flex flex-column">
+                                                                                <small class="js-lists-values-status text-50 mb-4pt">4th</small>
+
+                                                                            </div>
+                                                                        </td>
+
+                                              <td>
+                                                  <div class="d-flex flex-column">
+                                                      <small class="js-lists-values-status text-50 mb-4pt">Passed</small>
+                                                              <span class="indicator-line rounded bg-primary"></span>
+                                                  </div>
+                                              </td>
+
+
+
+                                              <td>
+
+                                                   <span  class="btn btn-dark btn-rounded">270/500</span>
+
+                                             </td>
+
+                                              <td style="text-align:center;">
+                                                  <div class="d-flex flex-column">
+                                                      <small class="js-lists-values-date"><strong>17/02/2019</strong></small>
+
+                                                  </div>
+                                              </td>
+
+                                          </tr><tr class="">
+
+                                              <td class="pr-0">
+                                                  <div class="custom-control custom-checkbox">
+                                                      <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck1_4" data-domfactory-upgraded="check-selected-row">
+                                                      <label class="custom-control-label" for="customCheck1_4"><span class="text-hide">Check</span></label>
+                                                  </div>
+                                              </td>
+
+                                              <td>
+                                                        <div class="d-flex flex-column">
+                                                                                          <a href="quiz-student-result.html"style="color:black;" class="js-lists-values-lead"><strong>#00245</strong></a >
+
+                                                                                      </div>
+                                                                                  </td>
+
+
+
+                                              <td>
+
+                                                  <div class="media flex-nowrap align-items-center" style="white-space: nowrap;">
+                                                      <a href="quiz-student-result.html"style="color:black;" class="avatar avatar-sm mr-8pt">
+
+                                                          <img src="assets\images\people\110\guy-2.jpg" alt="Avatar" class="avatar-img rounded-circle">
+
+
+                                                      </a >
+                                                      <div class="media-body">
+
+
+                                                          <div class="d-flex align-items-center">
+                                                              <div class="flex d-flex flex-column">
+                                                                  <a href="quiz-student-result.html"style="color:black;" class="mb-0"><strong class="js-lists-values-lead">Ollie Wallace</strong></a href="quiz-student-result.html"style="color:black;">
+
+                                                              </div>
+                                                          </div>
+
+
+                                                      </div>
+                                                  </div>
+
+                                              </td>
+                                              <td>
+                                                        <div class="d-flex flex-column">
+                                                                      <small class="js-lists-values-status text-50 mb-4pt">ECE</small>
+
+                                                                                      </div>
+                                                                                  </td>
+                                                  <td>
+                                                                            <div class="d-flex flex-column">
+                                                                                <small class="js-lists-values-status text-50 mb-4pt">4th</small>
+
+                                                                            </div>
+                                                                        </td>
+
+                                              <td>
+                                                  <div class="d-flex flex-column">
+                                                      <small class="js-lists-values-status text-50 mb-4pt">Failed</small>
+                                                          <span class="indicator-line rounded bg-accent"></span>
+                                                  </div>
+                                              </td>
+
+
+                                              <td>
+
+                                                   <span  class="btn btn-dark btn-rounded">80/500</span>
+
+                                             </td>
+
+                                              <td style="text-align:center;">
+                                                  <div class="d-flex flex-column">
+                                                      <small class="js-lists-values-date"><strong>16/02/2019</strong></small>
+
+                                                  </div>
+                                              </td>
+
+                                          </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+
+                            <div class="card-footer p-8pt">
+
+                                <ul class="pagination justify-content-start pagination-xsm m-0">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true" class="material-icons">chevron_left</span>
+                                            <span>Prev</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Page 1">
+                                            <span>1</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Page 2">
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span>Next</span>
+                                            <span aria-hidden="true" class="material-icons">chevron_right</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- <div class="card-body bordet-top text-right">
+          15 <span class="text-50">of 1,430</span> <a href="#" class="text-50"><i class="material-icons ml-1">arrow_forward</i></a>
+        </div> -->
+
+
+                        </div>
+
+
+            </div>
+
+        </div>
+        <!-- // END drawer-layout__content -->
+
+
+
+
+        <!-- drawer -->
+        <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+            <div class="mdk-drawer__content">
+                <div class="sidebar sidebar-dark-dodger-blue sidebar-left" data-perfect-scrollbar="">
+
+
+                    <div class="d-flex align-items-center navbar-height">
+                        <form action="index.html" class="search-form search-form--black mx-16pt pr-0 pl-16pt">
+                            <input type="text" class="form-control pl-0" placeholder="Search">
+                            <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                        </form>
+                    </div>
+
+
+
+                    <a href="index.html" class="sidebar-brand ">
+                        <!-- <img class="sidebar-brand-icon" src="assets/images/illustration/teacher/128/white.svg" alt="ILMS"> -->
+
+                        <span class="avatar avatar-xl sidebar-brand-icon h-auto">
+
+                            <span class="avatar-title rounded bg-primary"><img src="assets\images\illustration\teacher\128\white.svg" class="img-fluid" alt="logo"></span>
+
+                        </span>
+
+                        <span>ILMS</span>
+                    </a>
+
+
+
+
+
+                    <div class="sidebar-heading">Instructor</div>
+                    <ul class="sidebar-menu">
+
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-dashboard.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">school</span>
+                                <span class="sidebar-menu-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-courses-category.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Course</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-time-off.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Time-off</span></span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-time-table.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Schedule</span></span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-notifications.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Notifications</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-quizzes.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
+                                <span class="sidebar-menu-text">Quizzes</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-edit-course.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">post_add</span>
+                                <span class="sidebar-menu-text">Edit Course</span>
+                            </a>
+                        </li>
+
+                        <!-- <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-edit-quiz.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">format_shapes</span>
+                                <span class="sidebar-menu-text">Edit Quiz</span>
+                            </a>
+                        </li> -->
+
+                        <li class="sidebar-menu-item">
+                          <a class="sidebar-menu-button" href="change-password.html">
+                            <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">android</span>
+                            <span class="sidebar-menu-text">Change Password</span>
+                          </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-profile.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">android</span>
+                                <span class="sidebar-menu-text">Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!-- // END drawer -->
+
+
+    </div>
+    <!-- // END drawer-layout -->
+
+    <!-- jQuery -->
+    <script src="assets\vendor\jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets\vendor\popper.min.js"></script>
+    <script src="assets\vendor\bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="assets\vendor\perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="assets\vendor\dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="assets\vendor\material-design-kit.js"></script>
+
+    <!-- Fix Footer -->
+    <script src="assets\vendor\fix-footer.js"></script>
+
+    <!-- App JS -->
+    <script src="assets\js\app.js"></script>
+
+
+    <!-- Quill -->
+    <script src="assets\vendor\quill.min.js"></script>
+    <script src="assets\js\quill.js"></script>
+    <!-- Select2 -->
+    <script src="assets\vendor\select2\select2.min.js"></script>
+    <script src="assets\js\select2.js"></script>
+
+    <!-- Highlight.js -->
+    <script src="assets\js\hljs.js"></script>
+
+
+
+</body>
+
+</html>
