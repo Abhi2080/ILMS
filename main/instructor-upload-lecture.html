@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Change Password</title>
+    <title>Lesson Preview</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -86,39 +86,21 @@
             <!-- Header -->
 
 
+            <div class="navbar navbar-expand pr-0 navbar-light border-bottom-2" id="default-navbar" data-primary="">
 
 
-
-
-            <div class="navbar navbar-expand navbar-light border-bottom-2" id="default-navbar" data-primary="">
-
-                <!-- Navbar toggler -->
-                <button class="navbar-toggler w-auto mr-16pt d-block d-lg-none rounded-0" type="button" data-toggle="sidebar">
-                    <span class="material-icons">short_text</span>
-                </button>
-
-                <!-- Navbar Brand -->
-                <a href="index.html" class="navbar-brand mr-16pt d-lg-none">
-                    <!-- <img class="navbar-brand-icon" src="assets/images/logo/white-100@2x.png" width="30" alt="ILMS"> -->
-
-                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
-
-                        <span class="avatar-title rounded bg-primary"><img src="assets\images\illustration\student\128\white.svg" alt="logo" class="img-fluid"></span>
-
-                    </span>
-
-                    <span class="d-none d-lg-block">ILMS</span>
-                </a>
 
                 <div class="flex"></div>
 
 
                 <!-- Toggler -->
-                <a href="compact-instructor-courses.html" class="navbar-toggler navbar-toggler-custom align-items-center justify-content-center d-none d-lg-flex" data-toggle="tooltip" data-title="Switch to Compact Layout" data-placement="bottom" data-boundary="window">
+                <a href="compact-student-lesson.html" class="navbar-toggler navbar-toggler-custom align-items-center justify-content-center d-none d-lg-flex" data-toggle="tooltip" data-title="Switch to Compact Layout" data-placement="bottom" data-boundary="window">
                     <span class="material-icons">swap_horiz</span>
                 </a>
 
+
                 <div class="nav navbar-nav flex-nowrap d-flex mr-16pt">
+
 
                     <!-- Notifications dropdown -->
                     <div class="nav-item dropdown dropdown-notifications dropdown-xs-down-full" data-toggle="tooltip" data-title="Messages" data-placement="bottom" data-boundary="window">
@@ -264,66 +246,114 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
-
-
-
 
             <!-- // END Header -->
 
-
-
-            <div class="page-section pb-0">
-                <div class="container page__container d-flex flex-column flex-sm-row align-items-sm-center">
-                  <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
-
-                      <div class="mb-24pt mb-sm-0 mr-sm-24pt">
-                          <h2 class="mb-0">Change Password</h2></h2>
-
-                          <ol class="breadcrumb p-0 m-0">
-                              <li class="breadcrumb-item"><a href="instructor-dashboard.html">Home</a></li>
-
-                              <li class="breadcrumb-item active">
-
-                                  Change Password
-
-                              </li>
-
-                          </ol>
-
-                      </div>
-                  </div>
-                    <p class="d-sm-none"></p>
-                    <a href="" class="btn btn-outline-secondary flex-column">
-                        Need Help?
-                        <span class="btn__secondary-text">Contact us</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="page-section">
+            <div class="navbar navbar-light border-0 navbar-expand">
                 <div class="container page__container">
-
-                    <form action="login.html" class="col-sm-5 p-0">
-                        <div class="form-group">
-                            <label class="form-label" for="password">Password:</label>
-                            <input id="password" type="password" class="form-control" placeholder="Type a new password ...">
+                    <div class="media flex-nowrap">
+                        <div class="media-left mr-16pt">
+                            <a href="student-course.html"><img src="assets\images\paths\machine.jpg" width="70"alt="Angular" class="rounded"></a>
                         </div>
-                        <div class="form-group">
-                            <label class="form-label" for="password2">Confirm Password:</label>
-                            <input id="password2" type="password" class="form-control" placeholder="Confirm your new password ...">
+                        <div class="media-body">
+                            <a href="student-course.html" class="card-title text-body mb-0">Theory of Computation</a>
+                            <p class="lh-1 d-flex align-items-center mb-0">
+                                <span class="text-50 small font-weight-bold mr-8pt">Michael Dam</span>
+                                <span class="text-50 small">Instructor</span>
+                            </p>
                         </div>
-                        <button type="submit" class="btn btn-primary">Save password</button>
-                    </form>
+                    </div>
                 </div>
             </div>
+            <div class="bg-primary pb-lg-64pt py-32pt">
+                <div class="container page__container">
+                    <nav class="course-nav">
+                        <a data-toggle="tooltip" data-placement="bottom" data-title="Getting Started with Angular: Introduction" href=""><span class="material-icons">lock</span></a>
+                        <a data-toggle="tooltip" data-placement="bottom" data-title="Getting Started with Angular: Introduction to TypeScript" href=""><span class="material-icons text-primary">account_circle</span></a>
+                        <a data-toggle="tooltip" data-placement="bottom" data-title="Getting Started with Angular: Comparing Angular to AngularJS" href=""><span class="material-icons">lock</span></a>
+                        <a data-toggle="tooltip" data-placement="bottom" data-title="Getting Started with Angular: Lesson 4" href=""><span class="material-icons">lock</span></a>
+                    </nav>
+                    <div class="js-player embed-responsive embed-responsive-16by9 mb-32pt">
+                        <div class="player embed-responsive-item">
+                            <div class="player__content">
+                                <div class="player__image" style="--player-image: url(assets/images/illustration/player.svg)"></div>
+                                <a href="" class="player__play bg-primary">
+                                    <span class="material-icons">play_arrow</span>
+                                </a>
+                            </div>
+                            <div class="player__embed d-none">
+                                   <video id="video"class="embed-responsive-item" autoplay allowfullscreen=""></video>
+                            </div>
+                        </div>
+                    </div>
+                      <button style="float:right;"class="btn btn-white" onclick="close()">Stop</button>
+                    <div class="d-flex flex-wrap align-items-end mb-16pt">
+                        <h1 class="text-white flex m-0">Introduction to Theory of Computation</h1>
+                        <p class="h1 text-white-50 font-weight-light m-0">46:01</p>
+                    </div>
+
+                    <p class="hero__lead measure-hero-lead text-white-50 mb-24pt">
+                      The Theory of Computation "deals with how efficiently problems can be solved on a model of computation, using an algorithm".
+                      It studies the general properties of computation which in turn, helps us increase the efficiency at which computers solve problems.
+                    </p>
+
+                    <div class="d-flex flex-column flex-sm-row align-items-center justify-content-start">
+
+                        <button class="btn btn-outline-white mb-16pt mb-sm-0 mr-sm-16pt"onclick="toggle()">Record<i class="material-icons icon--right">play_circle_outline</i>
+
+                        </button>
+                         <button class="btn btn-white" onclick="document.getElementById('getFile').click()">Upload</button>
+                         <input type='file' id="getFile" style="display:none">
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-expand-sm navbar-light bg-white border-bottom-2 navbar-list p-0 m-0 align-items-center">
+                <div class="container page__container">
+                    <ul style="margin-top:20px;margin-bottom:20px;"class="nav navbar-nav flex align-items-sm-center">
+                        <li class="nav-item navbar-list__item">
+                            <div class="media align-items-center">
+                                <span class="media-left mr-16pt">
+                                    <img src="assets/images/people/256/256_michael-dam-258165-unsplash.jpg" alt="people" width="56" class="rounded-circle">
+                                </span>
+                                <div class="media-body">
+                                    <a class="card-title m-0" href="instructor-profile.html">Michael Dam</a>
+                                    <p class="text-50 lh-1 mb-0">Instructor</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item navbar-list__item">
+                            <i class="material-icons text-muted icon--left">schedule</i>
+                            46m
+                        </li>
+                        <li class="nav-item navbar-list__item">
+                            <i class="material-icons text-muted icon--left">assessment</i>
+                            Beginner
+                        </li>
+                        <li class="nav-item ml-sm-auto text-sm-center flex-column navbar-list__item">
+                            <div class="rating rating-24">
+                                <div class="rating__item"><i class="material-icons">star</i></div>
+                                <div class="rating__item"><i class="material-icons">star</i></div>
+                                <div class="rating__item"><i class="material-icons">star</i></div>
+                                <div class="rating__item"><i class="material-icons">star</i></div>
+                                <div class="rating__item"><i class="material-icons">star_border</i></div>
+                            </div>
+                            <p class="lh-1 mb-0"><small class="text-muted">4.7 ratings</small></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
 
         </div>
         <!-- // END drawer-layout__content -->
-
 
 
 
@@ -343,11 +373,11 @@
 
 
                     <a href="index.html" class="sidebar-brand ">
-                        <!-- <img class="sidebar-brand-icon" src="assets/images/illustration/student/128/white.svg" alt="ILMS"> -->
+                        <!-- <img class="sidebar-brand-icon" src="assets/images/illustration/teacher/128/white.svg" alt="ILMS"> -->
 
                         <span class="avatar avatar-xl sidebar-brand-icon h-auto">
 
-                            <span class="avatar-title rounded bg-primary"><img src="assets\images\illustration\student\128\white.svg" class="img-fluid" alt="logo"></span>
+                            <span class="avatar-title rounded bg-primary"><img src="assets\images\illustration\teacher\128\white.svg" class="img-fluid" alt="logo"></span>
 
                         </span>
 
@@ -355,80 +385,78 @@
                     </a>
 
 
-                                        <div class="sidebar-heading">Instructor</div>
-                                        <ul class="sidebar-menu">
 
 
-                                            <li class="sidebar-menu-item">
-                                                <a class="sidebar-menu-button" href="instructor-dashboard.html">
-                                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">school</span>
-                                                    <span class="sidebar-menu-text">Dashboard</span>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-menu-item">
-                                                <a class="sidebar-menu-button" href="instructor-courses-category.html">
-                                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
-                                                    <span class="sidebar-menu-text">Course</span>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-menu-item">
-                                                <a class="sidebar-menu-button" href="instructor-time-off.html">
-                                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
-                                                    <span class="sidebar-menu-text">Time-off</span></span>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-menu-item">
-                                                <a class="sidebar-menu-button" href="instructor-time-table.html">
-                                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
-                                                    <span class="sidebar-menu-text">Schedule</span></span>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-menu-item">
-                                                <a class="sidebar-menu-button" href="instructor-notifications.html">
-                                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
-                                                    <span class="sidebar-menu-text">Notifications</span>
-                                                </a>
-                                            </li>
 
-                                            <li class="sidebar-menu-item">
-                                                <a class="sidebar-menu-button" href="instructor-quizzes.html">
-                                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
-                                                    <span class="sidebar-menu-text">Quizzes</span>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-menu-item">
-                                                <a class="sidebar-menu-button" href="instructor-edit-course.html">
-                                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">post_add</span>
-                                                    <span class="sidebar-menu-text">Edit Course</span>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-menu-item">
-                                                <a class="sidebar-menu-button" href="instructor-upload-lecture.html">
-                                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">post_add</span>
-                                                    <span class="sidebar-menu-text">Uplaod/Record Lecture</span>
-                                                </a>
-                                            </li>
-                                            <!-- <li class="sidebar-menu-item">
-                                                <a class="sidebar-menu-button" href="instructor-edit-quiz.html">
-                                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">format_shapes</span>
-                                                    <span class="sidebar-menu-text">Edit Quiz</span>
-                                                </a>
-                                            </li> -->
+                    <div class="sidebar-heading">Instructor</div>
+                    <ul class="sidebar-menu">
 
-                                            <li class="sidebar-menu-item">
-                                              <a class="sidebar-menu-button" href="change-password.html">
-                                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">android</span>
-                                                <span class="sidebar-menu-text">Change Password</span>
-                                              </a>
-                                            </li>
-                                            <li class="sidebar-menu-item">
-                                                <a class="sidebar-menu-button" href="instructor-profile.html">
-                                                    <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">android</span>
-                                                    <span class="sidebar-menu-text">Profile</span>
-                                                </a>
-                                            </li>
-                                        </ul>
 
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-dashboard.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">school</span>
+                                <span class="sidebar-menu-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-courses-category.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Course</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-time-table.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Schedule</span></span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-time-off.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Time-off</span></span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-notifications.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Notifications</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-quizzes.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
+                                <span class="sidebar-menu-text">Quizzes</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-edit-course.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">post_add</span>
+                                <span class="sidebar-menu-text">Edit Course</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-upload-lecture.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">post_add</span>
+                                <span class="sidebar-menu-text">Uplaod/Record Lecture</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="sidebar-menu-item">
+                          <a class="sidebar-menu-button" href="change-password.html">
+                            <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">android</span>
+                            <span class="sidebar-menu-text">Change Password</span>
+                          </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-profile.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">android</span>
+                                <span class="sidebar-menu-text">Profile</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -437,7 +465,30 @@
 
     </div>
     <!-- // END drawer-layout -->
+    <script type="text/javascript">
 
+    function toggle(){
+
+      var video = document.getElementById('video');
+
+    // Get access to the camera!
+    if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+        // Not adding `{ audio: true }` since we only want video now
+        navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+            //video.src = window.URL.createObjectURL(stream);
+            video.srcObject = stream;
+            video.play();
+        });
+    }
+
+    }
+    function close(){
+
+      var video = document.getElementById("video");
+      video.stop();
+
+    }
+    </script>
     <!-- jQuery -->
     <script src="assets\vendor\jquery.min.js"></script>
 
