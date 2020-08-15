@@ -34,7 +34,8 @@
     <link type="text/css" href="assets\css\app.css" rel="stylesheet">
 
 
-
+     <!-- Vendor CSS -->
+     <link rel="stylesheet" href="assets\css\nestable.css">
 
 
 
@@ -400,7 +401,61 @@
                         </li>
                     </ul>
                 </div>
+            </div>  
+
+            <div class="page-section bg-white border-bottom-2">
+                <div class="container page__container">
+            <div class="flex"  style="max-width: 100%">
+
+                <div class="d-flex align-items-center mb-heading">
+                    <h4 class="m-0">Course Content</h4>
+                </div>
+
+                <div class="nestable" id="nestable">
+                    <ul class="nestable-list">
+                        <li class="nestable-item" data-id="2">
+                            <div class="nestable-handle">Introduction to Java</div>
+                            <ul class="nestable-list">
+                                <li class="nestable-item" data-id="2.1">
+                                    <div class="nestable-handle">About the Course</div>
+                                </li>
+                                <li class="nestable-item" data-id="2.1">
+                                    <div class="nestable-handle">Why Learn Java</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nestable-item" data-id="2">
+                            <div class="nestable-handle">Installation and Setup</div>
+                            <ul class="nestable-list">
+                                <li class="nestable-item" data-id="2.1">
+                                    <div class="nestable-handle">For Windows</div>
+                                </li>
+                                <li class="nestable-item" data-id="2.1">
+                                    <div class="nestable-handle">For Mac</div>
+                                </li>
+                                <li class="nestable-item" data-id="2.1">
+                                    <div class="nestable-handle">For Linux</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nestable-item" data-id="2">
+                            <div class="nestable-handle">Introduction to Java</div>
+                            <ul class="nestable-list">
+                                <li class="nestable-item" data-id="2.1">
+                                    <div class="nestable-handle">About the Course</div>
+                                </li>
+                                <li class="nestable-item" data-id="2.1">
+                                    <div class="nestable-handle">Why Learn Java</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
+        </div>
+        </div>
+
 
             <div class="page-section">
                 <div class="container page__container">
@@ -1284,7 +1339,11 @@
     <script src="assets\js\app.js"></script>
 
 
+     <!-- Vendor JS -->
+     <script src="assets\vendor\jquery.nestable.js"></script>
 
+     <!-- Initialize -->
+     <script src="assets\js\nestable.js"></script>
 
 </body>
 
